@@ -1,0 +1,2191 @@
+@font-face {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Poppins';
+  font-weight: light;
+  font-size: 17.5px;
+  line-height: 1.7;
+}
+hr { 
+    display: block;
+    margin-end: auto;
+    margin-start: auto;
+    border: 1px inset;
+    overflow: hidden;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+}
+/* For all title on top of webpages */
+.webpagetitle{
+	font-family: 'Merienda';
+}
+/* For about us page */
+.body1 {
+  margin: 0;
+  color:black;
+  background: linear-gradient(to right, #0099ff 0%, #66ffff 100%);
+  font-size:16.5px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* placement of the boxes */
+.column1 {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+/*box 1 */
+.card {
+  box-shadow: rgba(0, 0, 139, 0.4) -5px 5px, rgba(0, 0, 139, 0.3) -10px 10px, rgba(0, 0, 139, 0.2) -15px 15px, rgba(0, 0, 139, 0.1) -20px 20px, rgba(0, 0, 139, 0.05) -25px 25px;
+  margin: 8px;
+}
+/* box 2 */
+.card1{
+	box-shadow: rgba(0, 0, 139, 0.4) 0px 5px, rgba(0, 0, 139, 0.3) 0px 10px, rgba(0, 0, 139, 0.2) 0px 15px, rgba(0, 0, 139, 0.1) 0px 20px, rgba(0, 0, 139,0.05) 0px 25px;
+	margin: 8px;
+}
+/* box 3 */
+.card2{
+	box-shadow: rgba(0, 0, 139, 0.4) 5px 5px, rgba(0, 0, 139, 0.3) 10px 10px, rgba(0, 0, 139, 0.2) 15px 15px, rgba(0, 0, 139, 0.1) 20px 20px, rgba(0, 0, 139, 0.05) 25px 25px;
+	margin: 8px;
+}
+/* violet rectangle in page about us */
+.about-section {
+  
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+/* creation of boxes in about us page */
+.container1 {
+  padding: 0 16px;
+  background-color:white;
+  
+}
+
+.container1::after, .row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* For responsiveness */
+@media screen and (max-width: 1200px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* For contact number in page about us */
+.contact{
+	text-decoration:none;
+	color: black;
+}
+.contact:hover{
+	color: #00fecb;
+}
+	
+/* Donate page background image */
+.bgimage1{
+	background: linear-gradient(to right, #0099ff 0%, #66ffff 100%);
+	height: 100%;
+	color:black;
+	margin-left:25px;
+	font-size:16px;
+}
+/* Donation (second page) background image */
+.bgimage2{
+	margin:0;
+	font-family: 'Roboto', sans-serif;
+    color:white;  
+    	
+}
+/* main background */
+.main_container1{
+  min-height: 100vh;
+  width: 100%;
+  background-color:#20B2AA;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x:hidden;
+}
+
+/* donation form */
+.main_container1 .login_form {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    padding: 50px 25px;
+    background-image: linear-gradient(45deg, #fff1, #fff3);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 2px outset #fff5;
+    position: relative;
+    box-shadow: 0 2px 6px #0002, 0 5px 16px #0005;
+	color:white;
+}
+/* title in form */
+.main_container1 .login_form .login_form_title {
+    font-size: 18px;
+    color: #000;
+}
+.main_container1 .login_form .login_form_title ul li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline;
+	color: white;
+    background: #ea272d;
+}
+
+.main_container1 .login_form .group {
+    position: relative;
+    margin-top: 30px;
+}
+/* input box in form */
+.main_container1 .login_form .group input {
+    background-color: #0002;
+    border-radius: 4px;
+    padding: 6px 25px 6px 10px;
+    display: block;
+    width: 100%;
+    box-shadow: -1px 1px 2px #0002 inset;
+    font-size: 16px;
+    border: 1px outset #fff5;
+    transition: border-radius 0.3s;
+}
+/* for comment in form */
+.main_container1 .login_form .group textarea {
+    background-color: #0002;
+    border-radius: 4px;
+    padding: 6px 25px 6px 10px;
+    display: block;
+    width: 100%;
+	box-shadow: -1px 1px 2px #0002 inset;
+    font-size: 16px;
+    border: 1px outset #fff5;
+    transition: border-radius 0.3s;
+}
+/* for selecting options for payment in form */
+.main_container1 .login_form .group select option{
+    position: relative;
+    line-height: 1;
+    transition: 0.3s ease all;
+    z-index: 2;
+	color:black;
+    background-color:rgb(34,139,34,0.5);
+}
+.main_container1 .login_form .group select {
+    background-color: #0002;
+    border-radius: 4px;
+    padding: 6px 25px 6px 10px;
+    display: block;
+    width: 100%;
+    box-shadow: -1px 1px 2px #0002 inset;
+    color: #fff;
+    font-size: 16px;
+    border: 1px outset #fff5;
+    transition: border-radius 0.3s;
+}
+/* labels in input boxes */
+.main_container1 .login_form .group label {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #fffa;
+    transition-property: top, left, color, font-size;
+    transition: 0.3s;
+}
+
+.main_container1 .login_form .group input:valid+label,
+.main_container1 .login_form .group input:focus+label {
+    top: -14px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+/* button 1 */
+.main_container1 .login_form .btn1 {
+    border: none;
+	position:relative;
+    display: inline-block;
+    background: linear-gradient(45deg, #fffff05, #ffffff61);
+    padding: 8px 25px;
+    border-radius: 4px;
+    background-color:#2E8B57;
+    font-size: 16px;
+    box-shadow: 0 0 0 4px #fff2;
+    margin: 20px 0;
+    cursor: pointer;
+    transition-property: transform, background;
+    transition: 0.4s ease-in;
+	float:right;
+	z-index:1;
+}
+.main_container1 .login_form .btn1:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.main_container1 .login_form .btn1:hover {
+  background: #ff96ad;
+  box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px, 0 0 200px #ff96ad;
+  transform: translateY(-2px);
+  
+}
+
+.main_container1 .login_form .btn1:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+/* Button 2 */
+.main_container1 .login_form .btn2 {
+    border: none;
+	z-index:1;
+	position:relative;
+    display: inline-block;
+    padding: 8px 25px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0 0 0 4px #fff2;
+    margin: 20px 0;
+    cursor: pointer;
+    transition-property: transform, background;
+    transition: 0.4s ease-in;
+	float:left;
+	background-color: #3bb78f;
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+	font-family: "JetBrains Mono",monospace;
+	justify-content: center;
+}
+
+.main_container1 .login_form .btn2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.main_container1 .login_form .btn2 span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.main_container1 .login_form .btn2:hover span {
+  padding-left: 25px;
+}
+
+.main_container1 .login_form .btn2:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+/* For animation */
+@keyframes move {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    25%,
+    75% {
+        transform: translate(400%, 300%);
+    }
+
+    30%,
+    60%,
+    90% {
+        transform: translate(200%, 500%);
+    }
+
+    20%,
+    40%,
+    80% {
+        transform: translate(500%, 300%);
+    }
+
+    10%,
+    50% {
+        transform: translate(200%, 10%);
+    }
+}
+/* Resource page background image */
+.bgimage4{
+	background: linear-gradient(to right, #0099ff 0%, #66ffff 100%);
+	height: 100%;
+	color:black;
+	font-size:19px;;
+}
+/* Butterfly species background image */
+.bgimage5{
+	background: linear-gradient(to right, #0099ff 0%, #66ffff 100%);
+	height: 100%;
+	color:black;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+/* Butterflies of Mauritius background image */
+.bgimage6{
+	background: linear-gradient(to right, #0099ff 0%, #66ffff 100%);
+	height: 100%;
+	color:black;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+	overflow:auto;
+	}
+/* Butterfly information background image */
+.bgimage7{
+	background: linear-gradient(to right, #0099ff 0%, #66ffff 100%);
+	height: 100%;
+   	color: black;
+	margin-left:25px;
+	overflow:auto;
+	font-size: 17.2px;
+}	
+/* Endangered butterflies background image */
+.bgimage8{
+	background: linear-gradient(to right, #0099ff 0%, #66ffff 100%);
+	height: 100%;
+	margin-left:25px;
+	overflow:auto;
+    font-weight: 400;
+    font-size: 15.3px;
+    line-height: 1.7;
+	overflow-x:hidden;
+}
+/* Butterfly information 2 background image */
+.bgimage9{
+	background: linear-gradient(to right, #0099ff 0%, #66ffff 100%);
+	height: 100%;
+   	color: black;
+	margin-left:25px;
+	overflow:auto;
+	font-size: 18px;
+}	
+/* Hides scroll bar when screen size is 1024 px */
+@media (min-width: 1024px) {
+	.body1{
+		overflow:hidden;
+	}
+	.body2{
+		overflow:hidden;
+	}
+	.bgimage1{
+		overflow:hidden;
+	}
+    .bgimage2{
+        overflow:hidden;
+	}		
+	.bgimage4{
+		overflow:hidden;
+	}
+	.bgimage5{
+		overflow:hidden;
+	}
+	.bgimage6{
+		overflow:hidden;
+	}
+	.bgimage7{
+		overflow:hidden;
+	}
+	.bgimage8{
+		overflow:hidden;
+	}
+}	
+/* Page Butterfly sightings */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+*{
+  box-sizing: border-box;
+}
+
+.body2{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input{
+  font-family: 'Open Sans', sans-serif;
+}
+
+input,button{
+  outline: none;
+}
+/* main background */
+.main_container{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #50C878;
+  background-image: url('https://www.volunteeringkingston.org.uk/wp-content/uploads/2018/10/Winter.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x:hidden;
+}
+/* For animation part */
+.main_container .animate {
+    display: inline-block;
+    width: calc(10px * var(--count));
+    height: calc(10px * var(--count));
+    border-radius: calc(5px * var(--count));
+    border: 2px solid #fff5;
+    position: absolute;
+    top: calc(6% * var(--count));
+    left: calc(10% * var(--count));
+    box-shadow: 0 2px 6px #0002, 0 4px 16px #0004;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-delay: calc(0.2s * var(--count));
+    animation-duration: calc(5s * var(--count));
+    animation-fill-mode: both;
+}
+/* Circles in the background */
+.main_container .animate:nth-child(1) {
+    background-color: #ffc107;
+}
+
+.main_container .animate:nth-child(2) {
+    background-color: #2196f3;
+}
+
+.main_container .animate:nth-child(3) {
+    background-color: #8bc34a;
+}
+
+.main_container .animate:nth-child(4) {
+    background-color: #f44336;
+}
+
+/* sighting form */
+.main_container .login_form {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    padding: 50px 25px;
+    background-image: linear-gradient(45deg, #fff1, #fff3);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 2px outset #fff5;
+    position: relative;
+    box-shadow: 0 2px 6px #0002, 0 5px 16px #0005;
+	color:#d1edf2;
+}
+/* title of form */
+.main_container .login_form .login_form_title {
+    font-size: 18px;
+    color: #000;
+}
+.main_container .login_form .login_form_title ul li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline;
+	color: #fff;
+    background: #ea272d;
+}
+
+.main_container .login_form .group {
+    position: relative;
+    margin-top: 30px;
+}
+/* input box in form */
+.main_container .login_form .group input {
+    background-color: #0002;
+    border-radius: 4px;
+    padding: 6px 25px 6px 10px;
+    display: block;
+    width: 100%;
+    box-shadow: -1px 1px 2px #0002 inset;
+    color: #fff;
+    font-size: 16px;
+    border: 1px outset #fff5;
+    transition: border-radius 0.3s;
+}
+/* labels of input boxes */
+.main_container .login_form .group label {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #fffa;
+    transition-property: top, left, color, font-size;
+    transition: 0.3s;
+}
+
+.main_container .login_form .group input:valid+label,
+.main_container .login_form .group input:focus+label {
+    top: -14px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+}
+/* icons in input boxes */
+.main_container .login_form .group .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fffe;
+    text-shadow: 0 0 1px #0007;
+}
+/* button 1 */
+.main_container .login_form .btn1 {
+    border: none;
+	position:relative;
+    display: inline-block;
+    background: linear-gradient(45deg, #ffffff05, #ffffff61);
+    padding: 8px 25px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0 0 0 4px #fff2;
+    margin: 20px 0;
+    cursor: pointer;
+    transition-property: transform, background;
+    transition: 0.4s ease-in;
+	float:right;
+	z-index:1;
+}
+
+.main_container .login_form .btn1:hover {
+    background: #96ccff;
+	box-shadow: 0 0 5px #96ccff, 0 0 25px #96ccff, 0 0 50px, 0 0 200px #96ccff;
+}
+/* Button 2 */
+.main_container .login_form .btn2 {
+    border: none;
+	z-index:1;
+	position:relative;
+    display: inline-block;
+    padding: 8px 25px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0 0 0 4px #fff2;
+    margin: 20px 0;
+    cursor: pointer;
+    transition-property: transform, background;
+    transition: 0.4s ease-in;
+	float:left;
+	background-color: #3bb78f;
+    background-color: #3bb78f;
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+	font-family: "JetBrains Mono",monospace;
+	justify-content: center;
+}
+
+.main_container .login_form .btn2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.main_container .login_form .btn2 span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.main_container .login_form .btn2:hover span {
+  padding-left: 25px;
+}
+
+.main_container .login_form .btn2:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+/* for animation */
+@keyframes move {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    25%,
+    75% {
+        transform: translate(400%, 300%);
+    }
+
+    30%,
+    60%,
+    90% {
+        transform: translate(200%, 500%);
+    }
+
+    20%,
+    40%,
+    80% {
+        transform: translate(500%, 300%);
+    }
+
+    10%,
+    50% {
+        transform: translate(200%, 10%);
+    }
+}
+/* For upload file button in page Butterfly sightings */
+input[type=file]::-ms-browse {
+  border: 2px solid #6c5ce7;
+  padding: .2em .4em;
+  border-radius: .2em;
+  background-color: #a29bfe;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  border: 2px solid #6c5ce7;
+  padding: .2em .4em;
+  border-radius: .2em;
+  background-color: #a29bfe;
+  transition: 1s;
+}
+
+input[type=file]::file-selector-button {
+  border: 2px solid #6c5ce7;
+  padding: .2em .4em;
+  border-radius: .2em;
+  background-color: #a29bfe;
+  transition: 1s;
+}
+
+input[type=file]::-ms-browse:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+}
+
+input[type=file]::-webkit-file-upload-button:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+}
+
+input[type=file]::file-selector-button:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+}
+
+/* Button to go back to homepage in first page donate */
+.button1 {
+  align-items: center;
+  appearance: none;
+  background-color: #3bb78f;
+  background-color: #3bb78f;
+  background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin-left:5px;
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-left: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+/* For responsiveness */
+@media (max-width:900px) {
+	.button1{
+		font-size:12px;
+	}
+}
+/* Second button in webpage donate "click here" */
+.button2 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin-left:500px;
+}
+
+.button2:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button2:hover {
+  background: #ff96ad;
+  box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px, 0 0 200px #ff96ad;
+  transform: translateY(-2px);
+  
+}
+
+.button2:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+/* For responsiveness */
+@media (max-width:1200px) {
+	.button2{
+		float:right;
+		top:-50px;
+		font-size:12px;
+	}
+}
+
+/* Button to go to next page Endangered butterflies */
+.button3 {
+  align-items: center;
+  appearance: none;
+  background: linear-gradient(to right, #993300 0%, #0000cc 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin-left:1330px;
+  top:-30px;
+}
+
+.button3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button3 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button3:hover span {
+  padding-right: 25px;
+}
+
+.button3:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* For responsiveness */
+@media (max-width:1200px) {
+	.button3{
+		font-size:12px;
+		float:right;
+		top:20px;
+		overflow-x:hidden;
+	}
+}
+/* For radio buttons in page donation 2 */
+.button4 {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.button4-input {
+    position: absolute; 
+	opacity: 0;
+}
+.button4-radio{
+   width: 1.25em;
+   height: 1.25em;
+   border: 2px solid #d8e4e2;
+   border-radius: 50%;
+   margin-right: 10px;
+   box-sizing: border-box;
+   padding: 2px;
+}
+.button4-radio::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #00fecb;
+    border-radius: 50%;
+	transform: scale(0);
+	transition: transform 0.15s;
+}
+.button4-input:checked + .button4-radio::after {
+   transform: scale(1);
+}
+/* Button in box in page about us */
+.button5 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 0.4em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+   width: 100%;
+}
+
+.button5:active,
+.button5:hover {
+  outline: 0;
+}
+
+.button5 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button5:hover span {
+  background: none;
+}
+/* For responsiveness */
+@media(max-width){
+	.button5{
+		margin-right:100px;
+	}
+}
+/* Button to return to homepage in page about us */
+.button6 {
+  align-items: center;
+  appearance: none;
+  background-color: #3bb78f;
+  background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  float:left;
+  margin-left:10px;
+}
+
+.button6 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button6 span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.button6:hover span {
+  padding-left: 25px;
+}
+
+.button6:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+/* For responsiveness */
+@media(max-width:1200px){
+	.button6{
+		font-size:12px;
+	}
+}
+/* button used in page resource as "load more" */
+.button7 {
+  align-items: center;
+  appearance: none;
+  background: linear-gradient(to bottom, #00ffcc 0%, #009933 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin-left:400px;
+  top:-40px;
+}
+
+.button7:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button7:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button7:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+/* For responsiveness */
+@media (max-width:1200px) {
+	.button7{
+		font-size:12px;
+		overflow-x:hidden;
+		margin-left:300px;
+		
+	}
+}
+/* Button to go to next page resource */
+.button8 {
+  align-items: center;
+  appearance: none;
+  background: linear-gradient(to right, #993300 0%, #0000cc 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  float:right;
+  
+}
+
+.button8 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button8 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button8:hover span {
+  padding-right: 25px;
+}
+
+.button8:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* For responsiveness */
+@media (max-width:1200px) {
+	.button8{
+		font-size:12px;
+		float:left;
+		overflow-x:hidden;
+		margin-left:20px;
+		top:-20px;
+	}
+}
+/* Button to return to homepage in page further resource and page butterflies of Mauritius2*/
+.button9 {
+  align-items: center;
+  appearance: none;
+  background-color: #3bb78f;
+  background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  float:right;
+  margin-right:10px;
+
+}
+
+.button9 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button9 span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.button9:hover span {
+  padding-left: 25px;
+}
+
+.button9:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+/* For responsiveness */
+@media (max-width:900px) {
+	.button9{
+		font-size:12px;
+	}
+}
+/* Button to return to homepage in page butterfly species, page butterflies of Mauritius, Endangered butterflies and butterfly info */
+.button10 {
+  align-items: center;
+  appearance: none;
+  background-color: #3bb78f;
+  background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  float:left;
+  margin-left:10px;
+}
+
+.button10 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button10 span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.button10:hover span {
+  padding-left: 25px;
+}
+
+.button10:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+/* For responsiveness */
+@media (max-width:900px) {
+	.button10{
+		font-size:12px;
+		overflow-x:hidden;
+	}
+}
+/* Button to go to next page in page butterflies of Mauritius and page Butterfly information 2 */
+.button11 {
+  align-items: center;
+  appearance: none;
+  background: linear-gradient(to right, #993300 0%, #0000cc 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  float:right;
+  margin-right:10px;
+  top:15px;
+}
+
+.button11 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button11 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button11:hover span {
+  padding-right: 25px;
+}
+
+.button11:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* For responsiveness */
+@media(max-width:900px){
+	.button11{
+		font-size:12px;
+	}
+}	
+/* Button to go to next page Butterfly info */
+.button12 {
+  align-items: center;
+  appearance: none;
+  background: linear-gradient(to right, #993300 0%, #0000cc 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  float:right;
+}
+
+.button12 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button12 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button12:hover span {
+  padding-right: 25px;
+}
+
+.button12:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* For responsiveness */
+@media(max-width:1200px){
+	.button12{
+		font-size:12px;
+		top:-50px;
+	}
+}
+/* Button to go back to homepage in  third page butterfly information */
+.button13 {
+  align-items: center;
+  appearance: none;
+  background-color: #3bb78f;
+  background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin-left:1243px;
+  top:-88px;
+ 
+}
+
+.button13 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button13 span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.button13:hover span {
+  padding-left: 25px;
+}
+
+.button13:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+/* For responsiveness */
+@media(max-width:1300px){
+	.button13{
+		font-size:12px;
+		float:right;
+		top:-80px
+	}
+}
+/* Button to watch pop up video in page Butterfly info */
+.button14 {
+  background-image: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button14:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
+/* For responsiveness */
+@media (min-width: 768px) {
+  .button14 {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+/* To go to next page in page Butterfly species */
+.pagination {
+  display: inline-block;
+  float:right;
+}
+/* For responsiveness */
+@media(max-width:900px){
+	.pagination{
+		font-size:12px;
+	}
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #1434A4;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #d1edf2;
+  border-radius: 5px;
+}
+/* button inline with text in page Butterfly info 3 */
+.buttoninline {
+  color: #fff;
+  background: #444;
+  height:70px;  
+  line-height:70px; /* Same as height  */
+}
+/* for pop up video in page Butterfly info */
+#fade {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+}
+/* background behind video when popped */
+#light {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 800px;
+  max-height: 500px;
+  margin-left: -300px;
+  margin-top: -180px;
+  border: 2px solid #000;
+  z-index: 1002;
+  overflow: hidden;
+  background-color: black;
+}
+/* for close video */
+#boxclose {
+  float: right;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #AEAEAE;
+  border-radius: 3px;
+  background: #222222;
+  font-size: 31px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 0px;
+  padding: 11px 3px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: 1002;
+  opacity: 0.9;
+}
+
+.boxclose:before {
+  content: 'x';
+}
+
+#fade:hover ~ #boxclose {
+  display:none;
+}
+/* For table in page Endangered butterflies */
+ .fixTableHead {
+  overflow-y: auto;
+  height: 550px;
+}
+.fixTableHead thead th {
+  position: sticky;
+  top: 0;
+}
+/* For table in page butterflies of Mauritius and page Endangered butterflies*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  overflow-y:auto;
+  overflow-x:auto;
+}
+/* For responsiveness */
+@media(max-width:900px){
+	table{
+	font-size:12px;
+    }
+}
+/* changing colors of rows in a pattern */
+tr:nth-child(odd) td {
+    background-color: #81DAF5;
+}
+
+tr:nth-child(even) td {
+    background-color: #CEECF5;
+}
+
+tr:nth-child(1)
+{
+  background-color: #0052A2;
+  color:white;
+}
+/* table contents */  
+td{
+  padding: 4px 12px;
+  border: 2px solid #529432;
+  text-align: center;
+  color:black;
+}
+/* table head titles */
+th{
+  background: #ABDD93;
+  padding: 4px 12px;
+  border: 2px solid #529432;
+  text-align: center;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  color:blue;
+  text-align:center;
+  font-weight: bold;
+  font-size: 35px;
+}
+/* The Close Button */
+.close{
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
+.rectangle{
+  width: 1475px;
+  margin: 20px;
+  color:black;
+  border: 2px solid green;
+  height:300px;
+}
+/* image in page resource */
+.img{
+    position: relative;
+    background-color: rgb(236, 237, 239);
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 16px 16px;
+    margin-bottom: 8px;
+	float:left;
+	margin-right:10px;
+}
+/* image in page butterfly information */
+.img1{
+    position: relative;
+    background-color: rgb(50,205,50);
+    overflow: hidden;
+    border-radius: 6px;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    margin-bottom: 8px;
+	float:right;
+	margin: 10px 15px 0 0;
+	color:black;
+}
+/* image in page butterfly information */
+.img2{
+    position: relative;
+    background-color: rgb(50,205,50);
+    overflow: hidden;
+    border-radius: 6px;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    margin-bottom: 8px;
+	float:left;
+	margin: 10px 20px 0 0;
+	color:black;
+}
+/* image in page butterfly information */
+.img3{
+    position: relative;
+    background-color: rgb(50,205,50);
+    overflow: hidden;
+    border-radius: 6px;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    margin-bottom: 8px;
+	float:right;
+	margin: 60px 20px 0 0;
+	color:black;
+}
+/* image in page Butterflies of Mauritius and second page Endangered butterflies */
+.img4{
+    background-color: white;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: rgb(0 0 0 / 50%) 0px 16px 16px;
+    margin-bottom: 8px;
+	margin-right:10px;
+}
+/* image in first page Endangered butterflies */
+.img5{
+	position:relative;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: rgb(0 0 0 / 50%) 0px 16px 16px;
+    margin-bottom: 8px;
+	margin-left:370px;
+}
+/* For responsiveness */
+@media(max-width:1200px){
+    .img5{
+		float:right;
+		height:auto;
+		width:100%;
+		padding: 10px 10px 10px 10px;
+	}
+}	
+/* link reference in page resource */
+.reference {
+    color: rgba(255, 255, 255);
+    font-size: 0.765em;
+    margin-bottom: 8px;
+}
+/* For title in page further resource */
+.title{
+	color:rgba(0, 155, 119);
+	font-size: 40px;
+    font-weight: bold;
+	font-family: 'Merienda';
+}
+ /* To align images in page butterfly species */	
+* {
+  box-sizing: border-box;
+}
+
+.imgcolumn {
+  float: left;
+  width: 20%;  
+}
+
+/* Clearfix (clear floats) */
+.imgrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* input text below image */
+.img-with-text {
+    text-align: justify;
+    width: [width of img];
+}
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+}
+/* image linked in butterfly species */
+.imglink:link {
+  text-decoration: none;
+  color:black;
+}
+.imglink:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+.imglink:hover {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+.imglink:active {
+  text-decoration: none;
+}
+.responsive {
+  width: 75%;
+  height: 100%;
+}
+/* For responsiveness */
+@media only screen and (max-width: 480px) {
+  img {
+    width: 100%;
+	display: block;
+  }
+}
+/* Homepage */
+
+/* For title: Butterfly */
+.logo a {
+  font-size: 42px;
+  color: #d1edf2; !important;
+  font-family: 'Lobster Two';
+  font-size:70px;
+  text-decoration:none;
+}
+
+/* dot in red next to title */
+.logo a span {
+  color: #00fecb;
+}
+.wrapper {
+	width: 1170px;
+	margin: auto;
+	
+}
+/* For background image */
+.bgimage {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://butterfly-conservation.org/sites/default/files/styles/masthead/public/2019-05/46060461365_1e5849a4f8_o%20%281%29%20%281%29.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+	overflow:hidden;
+	background-repeat: no-repeat;
+	
+}
+/* For dropdown button */
+.dropbtn {
+  background: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  text-transform: uppercase;
+  font-family: poppins;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* contents of drop down button */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-transform: uppercase;
+  font-family: poppins;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background: #fff;
+	color: #333;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+	background-color: #00fecb;
+	color: #333;	
+}
+/* Top menu */
+.nav-area {
+	list-style: none;
+	margin-top:auto;	
+}
+.nav-area li {
+	display: inline-block;
+}
+
+.nav-area li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.nav-area li a:hover {
+	background: #fff;
+	color: #333;
+}
+/* For welcoming text */
+.welcome-text {
+	position: relative;
+	width: 600px;
+	height: 300px;
+	margin: 10% 30%;
+	text-align: center;
+	padding: 0 16px;
+}
+.welcome-text h1 {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 45px;
+	line-height: 70%;
+}
+.welcome-text h2 {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 40px;
+	line-height: 120%;
+}
+.welcome-text h3 {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	
+}
+.welcome-text h2 span {
+	color: #00fecb;
+}
+.welcome-text a {
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+.welcome-text a:hover {
+	background: #fff;
+	color: #333;
+}
+/* For responsiveness */
+
+@media (max-width:600px) {
+	.wrapper {
+		width: 100%;
+	}
+	img {
+		width: ;
+	}
+	.nav-area {
+		float: none;
+		margin-top: 0;
+	}
+	.nav-area li a {
+		padding: 5px;
+		font-size: 11px;
+	}
+	.nav-area {
+		text-align: center;
+	}
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.welcome-text h1 {
+		font-size: 30px;
+	}
+	.welcome-text h2 {
+		font-size: 20px;
+	}
+	.welcome-text h3 {
+		font-size: 10px;
+	}
+	.logo a {
+		font-size: 25px;
+	}
+	.dropbtn{
+		padding: 5px;
+		font-size: 11px;
+	}
+	.dropdown-content{
+		padding: 5px;
+		font-size: 11px;
+	}
+}
+/* For responsiveness */
+@media (max-width: 1200px) {
+	.wrapper {
+		width: 100%;
+	}
+	img {
+		width:100% ;
+	}
+	.nav-area {
+		float: none;
+		margin-top: 0;
+		text-align: center;
+	}
+	.nav-area li a {
+		padding: 5px;
+		font-size: 15px;
+	}
+	
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.welcome-text h1 {
+		font-size: 40px;
+	}
+	.welcome-text h2 {
+		font-size: 30px;
+	}
+	.welcome-text h3 {
+		font-size: 20px;
+	}
+	.logo a {
+		font-size: 40px;
+	}
+	.dropbtn{
+		padding: 5px;
+		font-size: 15px;
+	}
+	.dropdown-content{
+		padding: 5px;
+		font-size: 15px;
+	}
+}
+
+/* For responsiveness */
+@media (max-width:900px) {
+	button{
+		font-size:11px;
+	}
+}
+/* For animation in homepage */
+@charset "UTF-8";
+
+.animated-fast {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUpMenu {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    /*-webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);*/
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUpMenu {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    /*-webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);*/
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUpMenu {
+  -webkit-animation-name: fadeInUpMenu;
+  animation-name: fadeInUpMenu;
+}
+
+@-webkit-keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+/* Does not show the words on the webpage when reloading */
+.js .animate-box {
+  opacity: 0;
+}
+
+
+
+
+
