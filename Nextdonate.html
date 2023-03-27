@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Butterfly &mdash; Donation Form</title> <!-- Title of the tab -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- External CSS  -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<!-- Fa Fa icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	
+	<body class="bgimage2">
+	
+	   <div class="main_container1">
+            <!-- Form -->
+            <form action="" class="login_form">
+                <center>
+	                <h1 class="login_form_">Donation Form</h1> <!-- Form title -->
+	            </center>
+                <!-- Enter fullname -->
+                <div class="group">
+                    <input type="text" name="" required >
+                    <label>Full Name</label>
+                </div>
+                <!-- Enter email address -->
+	            <div class="group">
+                    <input type="text" name="" required>
+                    <label>Email Address</label>
+                </div>
+	            <!-- Enter phone number -->
+		        <div class="group">
+                    <input type="text" name="" required>
+                    <label>Phone Number</label>
+                </div>
+	            <!-- Enter amount -->
+	            <div class="group">
+                    <input type="text" name="" required>
+                    <label>Amount in Rupees</label>
+                </div>
+                <!-- select box for payment method -->
+	            <div class="group">
+                <select>
+				    <!-- Contents of select box -->
+                    <option disabled selected value> -- Payment Method -- </option> <!-- not an option -->
+                    <option>Paypal</option>
+                    <option>Mastercard</option>
+                    <option>Visa</option>
+	                <option>American Express</option>
+		            <option>Discover</option>
+                </select>
+            </div>
+	        <!--Enter comments -->
+	        <div class="group">
+	            <textarea rows="3" placeholder="Comments"></textarea>
+	        </div>
+	    
+		    <!-- submit button -->
+            <button class="btn1" id="myBtn" type="submit">Donate</button>
+	        <!-- back to home button -->
+		    <button class="btn2" onclick="window.location.href = 'Butterfly-Homepage.html';">
+                <span>Home <i class="fa fa-home"></i></span> <!-- home icon --> 
+            </button>    
+
+            </form>
+        </div>
+    
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>THANK YOU FOR YOUR SUPPORT!</h1>
+            </div>
+        </div>
+        <!-- javascript part so that a text displays when clicked on it -->
+        <script type="text/javascript">
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+
+    </body>	
+	
+</html>	
+	
